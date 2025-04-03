@@ -1,0 +1,30 @@
+@import 'vendor/normalize';
+@import 'vendor/fonts';
+
+@import 'vars-mixins';
+
+@import 'files/globals';
+@import 'components';
+@import 'files/archive';
+@import 'files/help-center';
+@import 'files/blog';
+@import 'files/pmp';
+
+//@import 'blocks/testimonials';
+//@import 'blocks/help-center';
+//@import 'blocks/accordion';
+
+@import 'blocks/home-hero';
+@import 'blocks/info-boxes';
+@import 'blocks/inner-hero';
+@import 'blocks/basic-section';
+
+@import 'blocks/contact';
+@import 'blocks/carousel';
+@import 'blocks/comparison';
+@import 'blocks/pricing';
+
+
+@import 'files/nav';
+@import 'files/nav-mobile';
+@import 'files/footer'

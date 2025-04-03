@@ -1,0 +1,36 @@
+
+@font-face {
+	font-family: Primary;
+	src: url('../assets/fonts/Raleway.woff2');
+	src: url('../fonts/Raleway.woff2') format('woff2'),
+	url('../fonts/Raleway.ttf') format("truetype-variations");
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: Secondary;
+	src: url('../fonts/Inter.woff2');
+	src: url('../fonts/Inter.woff2') format('woff2'),
+	url('../fonts/Inter.ttf') format("truetype-variations");
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: Secondary, sans-serif;
+	color: var(--b-color);
+	font-size: 20px;
+	line-height: var(--body-line-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:  Primary, sans-serif;
+	color: var(--t-color);
+	line-height: var(--title-line-height);
+}
+
+p {
+	margin-bottom: 3.2rem;
+}

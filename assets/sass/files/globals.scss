@@ -1,0 +1,148 @@
+.container {
+	width: var(--site-width);
+	max-width: var(--site-max-width);
+	margin-inline: auto;
+}
+
+.c-wide {
+	width: var(--site-width);
+	max-width: 1420px;
+	margin-inline: auto;
+}
+
+.c-narrow {
+	width: var(--site-width);
+	max-width: 1280px;
+	margin-inline: auto;
+}
+
+.c-blog {
+	width: var(--site-width);
+	max-width: 680px;
+	margin-inline: auto;
+}
+
+.title-1 {
+	font-size: var(--font-size-1);
+}
+
+.title-2 {
+	font-size: var(--font-size-2);
+}
+
+.title-3 {
+	font-size: var(--font-size-3);
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.title-4 {
+	font-size: var(--font-size-4);
+}
+
+.title-5 {
+	font-size: var(--font-size-5);
+}
+
+.title-6 {
+	font-size: var(--font-size-6);
+}
+
+.st_block {
+	position: relative;
+	&:not(:last-of-type) {
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 10%;
+			width: 80%;
+			height: 1px;
+			background-color: #cbd4e6;
+		}
+	}
+}
+
+.site-main {
+	max-width: 2560px;
+	margin-inline: auto;
+}
+
+p a {
+	color: var(--color-1);
+	text-decoration: underline;
+}
+
+
+.error404 {
+	article {
+		text-align: center;
+		img {
+			width: auto;
+			max-width: 30rem;
+		}
+		h1 {
+			font-size: 20rem;
+		}
+		h2 {
+			font-size: 5rem;
+		}
+		.text404 {
+			font-size: 30px;
+			margin-block: var(--space-4);
+		}
+		@include mob-only {
+			h1 {
+				font-size: 15rem;
+			}
+			.text404 {
+				font-size: 25px;
+			}
+		}
+	}
+}
+
+.wpforms-field-container {
+	@include flex-between;
+}
+.wpforms-field-label {
+	color: #475467;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+.wpforms-field {
+	padding-block: 12px!important;
+	&.wpforms-field-name, &.wpforms-field-email, &.wpforms-field-text, &.wpforms-field-phone {
+		@include limbo-min {
+			width: 48%;
+		}
+		@include tab-max {
+			width: 100%;
+		}
+		font-family: Secondary, sans-serif;
+	}
+	&.wpforms-field-textarea {
+		width: 100%;
+	}
+	input, textarea {
+		border: 2px solid #EAECF0;
+		border-radius: 4px;
+		font-size: 16px;
+		padding: 12px 20px;
+		font-family: Secondary, sans-serif;
+		&::placeholder {
+			color: #98A2B3;
+		}
+	}
+
+}
+.wpforms-container em.wpforms-error {
+	font-size: 14px;
+}
+.wpforms-submit-container {
+	margin-top: 12px;
+}
+.wpforms-submit {
+	cursor: pointer;
+	@include btn-3;
+}

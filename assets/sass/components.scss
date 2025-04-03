@@ -1,0 +1,146 @@
+/* Background */
+
+.block_bg {
+	@include bg_div;
+}
+
+.prefix {
+	font-size: 16px;
+	color: #98A2B3;
+	letter-spacing: 0.56px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+	margin-top: 0;
+	font-family: Secondary, sans-serif;
+	line-height: 1.5;
+	display: block;
+}
+
+.title-light {
+	.prefix {
+		color: #667085;
+	}
+	.intro_title {
+		color: #fff;
+		@include tab-max {
+			br {
+				display: none;
+			}
+		}
+	}
+	.intro_text {
+		color: #EAECF0;
+
+	}
+}
+
+.intro_title {
+	font-size: var(--font-size-2);
+	span {
+		color: var(--color-1)
+	}
+}
+
+.st_intro {
+	margin-bottom: var(--space-4);
+}
+
+.btns {
+	display: flex;
+	flex-wrap: wrap;
+	@include limbo-only {
+		flex-direction: column;
+		.btn {
+			margin-left: 0;
+			width: 100%;
+			&:first-child {
+				margin-bottom: 1.6rem;
+			}
+		}
+	}
+	@include mob-only {
+		flex-direction: column;
+		.btn {
+			margin-left: 0;
+			width: 100%;
+			&:first-child {
+				margin-bottom: 1.6rem;
+			}
+		}
+	}
+	svg {
+		fill: var(--color-2)
+	}
+}
+
+.st_info_boxes_inner {
+	display: grid;
+}
+
+/* Columns */
+
+.cols-2 {
+	.st_info_boxes_inner {
+		grid-template-columns: repeat(2, minmax(0,1fr));
+	}
+  }
+  .cols-3 {
+    .st_info_boxes_inner {
+			grid-template-columns: repeat(3, minmax(0,1fr));
+		}
+  }
+  .cols-4 {
+    .st_info_boxes_inner {
+			grid-template-columns: repeat(4, minmax(0,1fr));
+		}
+  }
+  .cols-5 {
+    .st_info_boxes_inner {
+			grid-template-columns: repeat(5, minmax(0,1fr));
+		}
+  }
+  figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  @include tab-max {
+    .tab-cols-1 {
+      .st_info_boxes_inner {
+				grid-template-columns: repeat(1, 1fr);
+			}
+    }
+    .tab-cols-2 {
+      .st_info_boxes_inner {
+				grid-template-columns: repeat(2, 1fr);
+			}
+    }
+    .tab-cols-3 {
+      .st_info_boxes_inner {
+				grid-template-columns: repeat(3, 1fr);
+			}
+    }
+    .tab-cols-4 {
+      .st_info_boxes_inner {
+				grid-template-columns: repeat(4, 1fr);
+			}
+    }
+  }
+  @include mob-only {
+    .mob-cols-1 {
+			.st_info_boxes_inner {
+				grid-template-columns: repeat(1, 1fr);
+			}
+    }
+    .mob-cols-2 {
+      .st_info_boxes_inner {
+				grid-template-columns: repeat(2, 1fr);
+			}
+    }
+    .mob-cols-3 {
+			.st_info_boxes_inner {
+				grid-template-columns: repeat(3, 1fr);
+			}
+    }
+  }

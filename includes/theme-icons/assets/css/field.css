@@ -1,0 +1,38 @@
+.s-tier-icons {
+    border: .5px solid #ccbeb4;
+
+	border-radius: 8px;
+}
+.s-tier-icons .s-tier-icons__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+	padding: 8px;
+	overflow-y: auto;
+	width: fit-content;
+    height: auto;
+	max-height: 135px;
+}
+
+.s-tier-icons .s-tier-icons__inner .s-tier-icons__item input {
+    display: none;
+}
+
+.s-tier-icons .s-tier-icons__inner .s-tier-icons__item label svg {
+    width: 35px;
+    height: 35px;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+.s-tier-icons .s-tier-icons__inner .s-tier-icons__item label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.s-tier-icons .s-tier-icons__inner .s-tier-icons__item input:checked + label {
+    background-color: #adf7bd;
+}

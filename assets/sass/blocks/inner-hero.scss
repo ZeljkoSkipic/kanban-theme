@@ -1,0 +1,62 @@
+.st_about_hero {
+	background-color: var(--bg-dark);
+	.st_intro {
+		text-align: center;
+		margin-bottom: 1.6rem;
+	}
+	.intro_title {
+		span {
+			color: var(--color-2)
+		}
+	}
+	.intro_text {
+		@include flex-center;
+	}
+	.btns {
+		align-items: center;
+		justify-content: center;
+		.btn-1 {
+			background-color: var(--color-2);
+			border-color: var(--color-2);
+			&:hover {
+				border-color: var(--color-3);
+			}
+		}
+		.btn-2 {
+			color: #fff;
+			&:hover {
+				color: #151a26;
+			}
+		}
+	}
+}
+
+.notify_me {
+	background-color: #f9f7f4;
+	.intro_title {
+		margin-bottom: var(--space-3);
+	}
+	input[type='email'] {
+		border-width: 0 0 3px 0;
+		padding: 15px 20px;
+		font-size: 20px;
+		width: 700px;
+		max-width: calc(100vw - 50px);
+		background-color: transparent;
+		outline: none;
+		box-sizing: border-box;
+	}
+	div.mce_inline_error {
+		background-color: transparent!important;
+		color: red!important;
+		font-size: 14px;
+		font-weight: 500!important;
+	}
+	.btns {
+		display: none;
+	}
+	input[type='submit'] {
+		border: none;
+		cursor: pointer;
+	}
+}

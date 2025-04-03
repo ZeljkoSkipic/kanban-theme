@@ -1,0 +1,136 @@
+.st_pricing {
+	background-color: var(--bg-light);
+	.st_intro {
+		text-align: center;
+	}
+	.disclaimer {
+		font-size: 14px;
+		font-style: italic;
+	}
+}
+
+.st_pricing_inner {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 1.6rem;
+	@include limbo-only {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 3.2rem;
+	}
+	@include tab-max {
+		grid-template-columns: 1fr;
+	}
+	.pricing_item {
+		background-color: #fff;
+		&:not(.free):not(.best_value) {
+			.checkout-btn {
+				@include btn-1;
+			}
+		}
+		&.free {
+			.checkout-btn {
+				@include btn-g;
+			}
+			.item_header_right {
+				background-image: url('../images/kanban-free.svg');
+			}
+		}
+		&:not(.free) {
+			.item_header_right {
+				background-image: url('../images/kanban-pro.svg');
+			}
+		}
+		&.best_value {
+			.checkout-btn {
+				@include btn-2;
+			}
+		}
+		.features_btn {
+			@include btn-g;
+		}
+		a {
+			width: 90%!important;
+			padding-block: 1rem!important;
+			margin-left: 5%;
+		}
+		.pricing_item_header {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			h3 {
+				width: 65%;
+			}
+			.item_header_right {
+				width: 30%;
+				height: auto;
+				aspect-ratio: 10 / 3;
+				transform: translate(1.6rem, -1.6rem);
+				max-width: 150px;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			.price {
+				width: 100%;
+			}
+		}
+		&.best_value {
+			.pricing_item_inner {
+				border-style: solid;
+				border-width: 0 1px 1px 1px;
+				border-color: var(--color-1);
+				border-radius: 0 0 8px 8px;
+			}
+			.checkout-btn {
+
+			}
+		}
+		.best_value {
+			background-color: var(--color-2);
+			color: #fff;
+			padding: 5px 20px;
+			font-size: 16px;
+			text-align: center;
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			border-radius: 8px 8px 0 0;
+			svg {
+				width: 22px;
+				margin-right: 8px;
+			}
+		}
+
+	}
+	.pricing_item_inner {
+		border-radius: 8px;
+		border-top: 5px solid var(--color-1);
+		padding: 3.2rem;
+		ul {
+			@include clean-list;
+			margin-block: 3.2rem 6.4rem;
+			li {
+				font-size: 16px;
+				display: flex;
+				align-items: center;
+				margin-bottom: 1.6rem;
+				svg {
+					width: 22px;
+					margin-right: 8px;
+				}
+			}
+		}
+		.price {
+			font-size: var(--font-size-2);
+			font-weight: 700;
+			color: #151a26;
+			margin-block: 1.6rem 3.2rem;
+			span {
+				font-size: .8em;
+				margin-right: 16px;
+				opacity: .3;
+				text-decoration: line-through;
+			}
+		}
+
+	}
+}

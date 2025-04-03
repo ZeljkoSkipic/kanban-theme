@@ -1,0 +1,70 @@
+.st_help_center_inner {
+	@include flex-between;
+	> div {
+		width: 31%;
+		background-color: var(--bg-light);
+	}
+	.hc_video_1, .hc_video_2 {
+		border-radius: 12px 2px 12px 12px;
+		@include tab-max {
+			margin-bottom: 32px;
+		}
+		@include tab-only {
+			width: 48%;
+		}
+		@include mob-only {
+			width: 100%;
+		}
+		.video_image {
+			border-radius: 12px 2px 0 0;
+		}
+		.hc_video_content {
+			padding: 0 24px 24px;
+		}
+		time {
+			color: #98A2B3;
+			font-size: 14px;
+			font-family: Secondary, sans-serif;
+		}
+		h3 {
+			font-size: 18px;
+			margin-top: 4px;
+			font-weight: 600;
+		}
+		svg {
+			display: block;
+			height: 6.4rem;
+			margin: -3.2rem auto 16px 0;
+		}
+		circle {
+			transition: var(--st);
+		}
+		&:hover {
+			circle {
+				fill: var(--color-1);
+			}
+		}
+	}
+	.hc_video_faq {
+		text-align: center;
+		border-radius: 12px;
+		padding: var(--space-4) var(--space-5);
+		@include tab-max {
+			width: 100%;
+		}
+		.faq_icon {
+			width: 6rem;
+			margin-bottom: 32px;
+		}
+		h3 {
+			font-size: 32px;
+			font-family: Primary, sans-serif;
+			margin-bottom: 8px;
+		}
+		.hc_faq_text {
+			font-size: 16px;
+			font-family: Secondary, sans-serif;
+			margin-bottom: 32px;
+		}
+	}
+}

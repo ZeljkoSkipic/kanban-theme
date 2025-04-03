@@ -1,0 +1,47 @@
+.st_contact {
+
+}
+
+.st_contact_inner {
+	@include flex;
+	padding-inline: 32px;
+	max-width: 2560px;
+	margin-inline: auto;
+	@include mob-only {
+		padding-inline: 25px;
+	}
+	@include limbo-min {
+		> div {
+			width: 48%;
+		}
+	}
+	.left {
+		@include tab-max {
+			order: 2;
+		}
+		img {
+			border-radius: 1.6rem
+		}
+	}
+	.right {
+		max-width: 57rem;
+		padding-block: var(--space-4);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@include limbo-min {
+			padding-left: 8rem;
+		}
+		@include tab-max {
+			order: 1;
+		}
+	}
+}
+.wpforms-submit {
+	@include btn-1;
+	width: 100%;
+}
+.wpforms-submit-spinner {
+	width: 25px;
+}

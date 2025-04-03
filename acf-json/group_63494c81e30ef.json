@@ -1,0 +1,60 @@
+{
+    "key": "group_63494c81e30ef",
+    "title": "Component: Spacing",
+    "fields": [
+        {
+            "key": "field_63494c82c44a1",
+            "label": "Padding",
+            "name": "padding",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Padding settings are applied only to Top and Bottom values",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "space_3": "Small",
+                "space_2": "Medium",
+                "space_1": "Large",
+                "": "",
+                "space_3_2": "Small\/Medium",
+                "space_3_1": "Small\/Large",
+                "space_2_3": "Medium\/Small",
+                "space_2_1": "Medium\/Large",
+                "space_1_3": "Large\/Small",
+                "space_1_2": "Large\/Medium"
+            },
+            "default_value": "space_2",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 1,
+            "allow_in_bindings": 1,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1742235020
+}
