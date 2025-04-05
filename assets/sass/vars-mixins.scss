@@ -377,9 +377,13 @@
 	overflow: hidden;
 	box-sizing: border-box;
 	font-size: 16px;
+	@include tab-max {
+		width: 100%;
+	}
 	&:not(:last-child) {
-		@include desk-min() {
+		@include limbo-min {
 			margin-right: 2rem;
+
 		}
 		@include limbo-max {
 			margin-bottom: 1.6rem;
@@ -472,7 +476,7 @@
 	}
 	&:hover {
 		path {
-			fill: var(--color-1)
+			stroke: #fff
 		}
 	}
 }

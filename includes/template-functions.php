@@ -161,6 +161,8 @@ function register_acf_blocks() {
 	register_block_type( __DIR__ . '/../blocks/used/comparison' );
 	register_block_type( __DIR__ . '/../blocks/used/contact' );
 	register_block_type( __DIR__ . '/../blocks/used/carousel' );
+	register_block_type( __DIR__ . '/../blocks/used/cta' );
+	register_block_type( __DIR__ . '/../blocks/used/features-list' );
 
 	//register_block_type( __DIR__ . '/../blocks/help-center' );
 

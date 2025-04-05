@@ -78,7 +78,7 @@ const watchPhp = './**/*.php';
 
 // >>>>> Zip file config.
 // Must have.zip at the end.
-const zipName = 'kanbanplugin.zip';
+const zipName = 'kanban-theme.zip';
 
 // Must be a folder outside of the zip folder.
 const zipDestination = './../'; // Default: Parent folder.

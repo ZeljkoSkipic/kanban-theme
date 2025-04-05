@@ -39,6 +39,9 @@ label[for="nav-toggle"] {
 			height: 100%;
 			object-fit: contain;
 			width: 100%;
+			padding-block: 1rem;
+			box-sizing: border-box;
+			object-position: left;
 		}
 		.main-navigation {
 			.main-menu-wrap {
@@ -74,7 +77,7 @@ label[for="nav-toggle"] {
 					color: var(--t-color);
 					font-family: Secondary, sans-serif;
 					font-weight: 500;
-					font-size: 20px;
+					font-size: 18px;
 					width: 100%;
 					display: inline-flex;
 					align-items: center;
@@ -147,7 +150,13 @@ label[for="nav-toggle"] {
 				width: 100%;
 				a {
 					width: 100%;
-					margin-top: 24px;
+					font-size: 18px;
+					&:first-child {
+						margin-top: 24px;
+					}
+					svg {
+						width: 18px;
+					}
 				}
 			}
 		}

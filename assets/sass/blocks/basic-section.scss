@@ -5,6 +5,16 @@
 .st_section_inner {
 	@include flex-between;
 	align-items: center;
+	h2 {
+		span {
+			color: var(--color-1)
+		}
+		br {
+			@include tab-max {
+				display: none;
+			}
+		}
+	}
 	.btns {
 		margin-top: var(--space-4);
 	}

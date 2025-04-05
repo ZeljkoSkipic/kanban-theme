@@ -1,0 +1,156 @@
+.st_cta {
+	&::before {
+		display: none;
+	}
+	.st_cta_inner {
+		@include flex-between;
+		border-radius: 3.2rem;
+		position: relative;
+	}
+	&.style-1 {
+		.st_cta_inner {
+			max-width: 1180px;
+			background: linear-gradient(90deg,#161616 0%,#272A2E 41.51%,#527FA2 81.17%,#4B7C9C 100%);
+			@include tab-max {
+				background: linear-gradient(180deg,#161616 0%,#272A2E 41.51%,#527FA2 81.17%,#4B7C9C 100%);
+			}
+			.left {
+				padding: var(--space-4) var(--space-3);
+				@include mob-only {
+					padding: var(--space-4) 3.2rem;
+				}
+				* {
+					color: #fff;
+				}
+				h2 {
+					font-size: 4.2rem;
+					span {
+						color: var(--color-2);
+					}
+				}
+				img {
+					width: 150px;
+					margin-bottom: 1.6rem;
+					@include tab-max {
+						margin-bottom: 2.4rem;
+					}
+				}
+				.cta_text {
+					font-size: 18px;
+					margin-block: 3.2rem 5.6rem;
+				}
+				a {
+					text-align: center;
+				}
+			}
+			.right {
+				img {
+					bottom: 0;
+					right: 0;
+					border: 1.6rem solid #000;
+					border-width: 1.6rem 0 0 1.6rem;
+					border-radius: 1.2rem 0 0 0;
+
+				}
+				figure {
+					aspect-ratio: 4 / 3;
+					box-sizing: border-box;
+				}
+				@include limbo-min {
+					img {
+						position: absolute;
+						width: 40%;
+						height: auto;
+						max-height: 80%;
+					}
+				}
+				@include tab-max {
+					text-align: right;
+					img {
+						width: 80%;
+					}
+				}
+			}
+			> div {
+				@include limbo-min {
+					width: 50%;
+				}
+				@include tab-max {
+					width: 100%;
+				}
+			}
+		}
+	}
+	&.style-2 {
+		&.has_bg {
+			background: radial-gradient(circle,#527fa2 0,#4b7c9c 0,#161616 71%,#272a2e 100%);
+		}
+		.st_cta_inner {
+			background: linear-gradient(90deg,#4B7C9C 0%,#527FA2 31.51%,#1e92eb 61.17%,#1e92eb 100%);
+			@include flex-between;
+			flex-direction: row-reverse;
+			padding: var(--space-2);
+			align-items: center;
+			position: relative;
+			@include tab-max {
+				padding: var(--space-4);
+			}
+			&:after {
+				content: "";
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				transform: translate(7rem, 7rem);
+				@include tab-max {
+					transform: translate(10px, 7rem);
+				}
+				background-image: url(../icons/chart.svg);
+				background-repeat: no-repeat;
+				background-position: bottom right;
+				opacity: 0.1;
+				background-size: 40rem;
+			}
+			.right {
+				z-index: 2;
+				img {
+					border-radius: 1.2rem;
+					aspect-ratio: 16 / 9;
+					object-position: top;
+				}
+				@include limbo-min {
+					width: 35%;
+					text-align: left;
+				}
+				@include tab-max {
+					margin-inline: auto;
+					margin-top: 3.2rem;
+				}
+			}
+			.left {
+				z-index: 2;
+				@include limbo-min {
+					width: 50%;
+				}
+				img {
+					display: none;
+				}
+				h2 {
+					font-size: 3.6rem;
+					color: #fff;
+					span {
+						color: var(--color-1);
+					}
+					br {
+						display: none;
+					}
+				}
+				p {
+					color: #fff;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}

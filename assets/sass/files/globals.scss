@@ -6,7 +6,7 @@
 
 .c-wide {
 	width: var(--site-width);
-	max-width: 1420px;
+	max-width: 1680px;
 	margin-inline: auto;
 }
 
@@ -50,11 +50,11 @@
 
 .st_block {
 	position: relative;
-	&:not(:last-of-type) {
-		&::after {
+	&:not(:first-of-type) {
+		&::before {
 			content: '';
 			position: absolute;
-			bottom: 0;
+			top: 0;
 			left: 10%;
 			width: 80%;
 			height: 1px;
@@ -69,7 +69,7 @@
 }
 
 p a {
-	color: var(--color-1);
+	color: var(--color-2);
 	text-decoration: underline;
 }
 

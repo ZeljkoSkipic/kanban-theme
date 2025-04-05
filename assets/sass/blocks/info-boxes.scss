@@ -71,7 +71,7 @@
 			}
 			@include tab-max {
 				.ib_image_wrap {
-					max-width: 6rem;
+					max-width: 8rem;
 					margin-bottom: 3.2rem;
 				}
 			}
@@ -159,10 +159,11 @@
 		}
 	}
 	&.style-3 {
-		.intro_text {
-			font-size: 24px;
-			font-weight: 500;
+		.st_intro {
+			max-width: 1080px;
+			margin-bottom: var(--space-2);
 		}
+
 		.container {
 			position: relative;
 			&::before {
@@ -229,6 +230,12 @@
 			gap: 3.2rem;
 
 		}
+		.st_intro  {
+			max-width: 1080px;
+			margin-inline: auto;
+			text-align: center;
+			margin-bottom: var(--space-2);
+		}
 		.st_col  {
 			border-radius: 12px;
 			border: 1px solid #eaecf0;
@@ -256,6 +263,10 @@
 			gap: 3.2rem;
 
 		}
+		.st_intro  {
+			max-width: 980px;
+			margin-bottom: var(--space-2);
+		}
 		.st_col  {
 			border-radius: 12px;
 			border: 1px solid #eaecf0;
@@ -269,9 +280,15 @@
 				padding-bottom: 3.2rem;
 				background-color: var(--bg-light);
 				.st_col_text {
-					width: 80%;
+
 					margin-top: 0;
 					margin-bottom: auto;
+					@include mob-only {
+						width: 90%;
+					}
+					@include tab-min {
+						width: 80%;
+					}
 				}
 				.ib_image_wrap {
 					position: absolute;
@@ -282,6 +299,9 @@
 					margin-right: 0;
 					right: -4rem;
 					bottom: -4rem;
+					@include tab-max {
+						right: -10px;
+					}
 				}
 				svg {
 					width: auto;

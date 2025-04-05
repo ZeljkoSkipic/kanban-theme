@@ -42,7 +42,7 @@ $reading_time_text = get_reading_time_text($post_id);
 			}
 		?>
 		</div>
-		<a class="arrow-link" href="<?php the_permalink(); ?>">Read More<svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.1667 1.66666L16.5 4.99999M16.5 4.99999L13.1667 8.33332M16.5 4.99999L1.5 4.99999" stroke="#00aeef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+		<a class="arrow-link" href="<?php the_permalink(); ?>">Continue Reading<svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.1667 1.66666L16.5 4.99999M16.5 4.99999L13.1667 8.33332M16.5 4.99999L1.5 4.99999" stroke="#00aeef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
 
 	</div>
 </div>

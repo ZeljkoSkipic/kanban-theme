@@ -51,7 +51,6 @@
 			align-items: center;
 			padding-block: 1rem;
 			position: relative;
-
 			.site-logo {
 				width: 160px;
 				margin: 0;
@@ -71,7 +70,7 @@
 			justify-content: space-between;
 		}
 		.menu-main-container {
-			margin-left: 5rem;
+			margin-left: 3rem;
 		}
 		#primary-menu {
 			@include flex;
@@ -170,7 +169,7 @@
 	}
 	.header-main_right {
 		a {
-			padding: 12px 20px;
+			padding: 10px 20px;
 			min-width: unset;
 			text-align: center;
 			svg {
@@ -187,12 +186,5 @@
 	display: flex;
 	@include mob-only {
 		flex-direction: column;
-	}
-	a {
-		@include tab-min {
-			&:last-child {
-				margin-left: 16px;
-			}
-		}
 	}
 }

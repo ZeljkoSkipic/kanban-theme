@@ -31,7 +31,6 @@
 	}
 	.intro_text {
 		color: #EAECF0;
-
 	}
 }
 
@@ -44,6 +43,11 @@
 
 .st_intro {
 	margin-bottom: var(--space-4);
+	.intro_text {
+		@include mob-only {
+			font-size: 18px;
+		}
+	}
 }
 
 .btns {

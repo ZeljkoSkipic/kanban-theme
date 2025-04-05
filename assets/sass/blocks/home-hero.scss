@@ -52,6 +52,13 @@
 					margin-bottom: 12px;
 				}
 			}
+			@include mob-only {
+				margin-bottom: var(--space-4);
+				li {
+					font-size: 16px;
+					background-size: 20px;
+				}
+			}
 		}
 		figure {
 			max-width: 35rem;
@@ -73,7 +80,6 @@
 			position: sticky;
 		}
 		@include tab-max {
-			margin-top: 32px;
 			padding-inline: 25px;
 		}
 		@include limbo-min {
